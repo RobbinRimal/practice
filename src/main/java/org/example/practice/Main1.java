@@ -8,7 +8,8 @@ public class Main1 {
           for (String j:x){
               System.out.println(j);
           }
-            System.out.println(SecureTest.alphanumeric("thisis7avalidstatementiguess87"));;
+            System.out.println(SecureTest.alphanumeric("thisis7avalidstatementiguess87"));
+
 
         }
 
