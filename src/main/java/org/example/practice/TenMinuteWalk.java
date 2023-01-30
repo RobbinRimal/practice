@@ -1,5 +1,7 @@
 package org.example.practice;
 
+import java.util.Arrays;
+
 public class TenMinuteWalk {
     /*You live in the city of Cartesia where all roads are laid out in a perfect grid.
      You arrived ten minutes too early to an appointment, so you decided to take the opportunity
@@ -43,4 +45,19 @@ public class TenMinuteWalk {
 
         return false;
 }
+
+    public static boolean betterThanAverage(int[] classPoints, int yourPoints) {
+        int k = 0;
+        for (int x : classPoints) {
+            k += x;
+        }
+        boolean g = (k / classPoints.length) > yourPoints ? false : true;
+        return g;
+    }
+    static boolean betterThanAverageBestVerson(final int[] classPoints, final int yourPoints) {
+        return Arrays.stream(classPoints).average().orElse(0) < yourPoints;
+    }
 }
+
+
+
