@@ -57,7 +57,69 @@ public class TenMinuteWalk {
     static boolean betterThanAverageBestVerson(final int[] classPoints, final int yourPoints) {
         return Arrays.stream(classPoints).average().orElse(0) < yourPoints;
     }
-}
 
+    public static int[] countPositivesSumNegatives(int[] input)
+
+    {
+
+        int posative=0,negative=0;
+        for(int k:input){
+            if(k<0){
+                negative+=k;
+            }
+            else{posative+=1;}
+        }
+        int[] xk={posative,negative};
+        System.out.println(xk);
+        return xk;
+    }
+
+    public static String reverseWords(final String original)
+    {
+        int z=1;
+        String sentences="";
+        char[] chars=original.toCharArray();
+        char k;
+        for(int x=0, y=0;x<chars.length;x++){
+
+        if(chars[x] ==' '){
+            for (int i = y; i <x ; i++) {
+
+               k=chars[i];
+                chars[i]=chars[x-z];
+                chars[x-z]=k;
+                 z++;
+            }
+            z=1;
+            y=x;
+        }
+    }
+        for(char c:chars){
+            sentences+=c;
+        }
+        System.out.println(sentences);
+        return sentences;
+    }
+
+    public int min(int[] list) {
+        int min=list[0];
+
+            for (int j:list){
+                min=Integer.min(min,j);
+            }
+
+        return   min;
+    }
+
+    public int max(int[] list) {
+        int min=list[0];
+
+            for (int j:list){
+                min=Integer.max(min,j);
+            }
+
+        return   min;
+    }
+}
 
 
