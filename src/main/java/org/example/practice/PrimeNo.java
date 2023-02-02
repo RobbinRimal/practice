@@ -1,5 +1,7 @@
 package org.example.practice;
 
+import java.util.List;
+
 public class PrimeNo {
     public static boolean isPrime(int num) {
       int   x;

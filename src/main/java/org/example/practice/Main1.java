@@ -24,6 +24,21 @@ public class Main1 {
             System.out.println(BouncingBall.bouncingBall(3,.66,1.5));
 
             System.out.println(SmallestIntegerFinder.findSmallestInt(new int[]{4,67,56,34}));
+            Arrays.stream(Kata.invert(new int[]{44, -55, 33})).forEach(System.out::println);
+            SquareDigit squareDigit=new SquareDigit();
+
+            System.out.println(Kata2.getMiddle("test"));
+            System.out.println(Kata2.sum(new int[]{4,5,6,7,8,10}));
+            System.out.println(Kata.countingSheep(4));
+            Xbonacci xbonacci=new Xbonacci();
+            xbonacci.tribonacci(new double[]{0,0,1},3);
+            Cockroach cockroach=new Cockroach();
+            System.out.println(cockroach.cockroachSpeed(1.2));
+            PrimeCounter primeCounter= new PrimeCounter();
+            System.out.println();
+            System.out.println();
+            System.out.println(primeCounter.countPrimes("123")+" this is the number we are looking 4");
+
         }
 
     }
