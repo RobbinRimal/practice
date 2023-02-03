@@ -39,8 +39,9 @@ public class Main1 {
 //            System.out.println();
 //            System.out.println(primeCounter.countPrimes("123")+" this is the number we are looking 4");
 //            System.out.println("this is the output!!");
-               long[] xa =GapInPrimes.gap(2,100,110);
-            Arrays.stream(xa).forEach(System.out::println);
+//               long[] xa =GapInPrimes.gap(2,100,110);
+//            Arrays.stream(xa).forEach(System.out::println);
+            System.out.println(RgbToHex.rgb(255,255,255));
         }
 
     }
